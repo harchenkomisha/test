@@ -1,2 +1,2 @@
-def shufr(a):
+def shifr(a):
     pass
