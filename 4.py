@@ -1,0 +1,2 @@
+def shufr(a):
+    pass
