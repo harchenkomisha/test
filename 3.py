@@ -1,4 +1,14 @@
 def symbol_statistics(text):
+    """ Возвращает статиску символов в тексте
+    
+    
+    Args:
+        text(str): text
+
+
+    Returns:
+        dict: статистику символов в виде словаря
+    """
     stat = {}
     for letter in text:
         letter = letter.lower()
