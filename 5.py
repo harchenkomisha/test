@@ -1,6 +1,12 @@
 import random
 
 def random_carriage(coupe_ammout = 9):
+    """ случайным образом создает  кол-во купе
+    Args:
+        coupe_ammout(int): купе
+    Returns:
+        возвращает вагон
+    """
     carriage = []
     coupe = {}
     for place in range(1,coupe_ammout * 4 + 1):
@@ -12,6 +18,10 @@ def random_carriage(coupe_ammout = 9):
 
 
 def print_carriage(carriage):
+    """ выводет кол-во вагонов
+    Args:
+        carriage(int): вагон
+    """
     for  index, coupe in enumerate(carriage):
         print(index +1 ,':', coupe)
    
@@ -31,7 +41,7 @@ def empty_coupe_list(carriage):
     return answer
 
 def empty_place_list(carriage):
-    """ Список полностью свободных купе
+    """ Список свободных мест в вагоне
     Args:
         carriage(int) = вагон
 
@@ -46,10 +56,10 @@ def empty_place_list(carriage):
     return answer
 
 def empty_lh_place_list(carriage, low = True):
-    """ Список полностью свободных купе
+    """ Список свободных мест нижних мест в вагоне и Список свободных мест верхих мест в вагоне
     Args:
         carriage(int) = вагон
-
+        low(int) = высота
     Returns:
             Возвращает ответ
     """
@@ -62,7 +72,7 @@ def empty_lh_place_list(carriage, low = True):
 
     return answer
 def empty_place_in_gender_coupe(carriage, gender):
-    """ Список полностью свободных купе
+    """ Список свободных мест в купе с мужской компнией и Список свободных мест в купе с женской компнией
     Args:
         carriage(int) = вагон
         gender(int) = купи
