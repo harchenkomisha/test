@@ -17,6 +17,13 @@ def print_carriage(carriage):
    
 
 def empty_coupe_list(carriage):
+    """ Список полностью свободных купе
+    Args:
+        carriage(int) = вагон
+
+    Returns:
+            Возвращает ответ
+    """
     answer = {}
     for index, coupe in enumerate(carriage):
         if not any(coupe.values()):
@@ -24,6 +31,13 @@ def empty_coupe_list(carriage):
     return answer
 
 def empty_place_list(carriage):
+    """ Список полностью свободных купе
+    Args:
+        carriage(int) = вагон
+
+    Returns:
+            Возвращает ответ
+    """
     answer = []
     for  coupe  in carriage:
         for place in coupe:
@@ -32,6 +46,13 @@ def empty_place_list(carriage):
     return answer
 
 def empty_lh_place_list(carriage, low = True):
+    """ Список полностью свободных купе
+    Args:
+        carriage(int) = вагон
+
+    Returns:
+            Возвращает ответ
+    """
     answer = []
     for coupe in carriage:
         for place in coupe:
@@ -41,6 +62,14 @@ def empty_lh_place_list(carriage, low = True):
 
     return answer
 def empty_place_in_gender_coupe(carriage, gender):
+    """ Список полностью свободных купе
+    Args:
+        carriage(int) = вагон
+        gender(int) = купи
+
+    Returns:
+            Возвращает ответ
+    """
     answer = []
     for coupe in carriage:
         answer1 = []
