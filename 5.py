@@ -43,19 +43,21 @@ def empty_lh_place_list(carriage, low = True):
 def empty_place_in_gender_coupe(carriage, gender):
     answer = []
     for coupe in carriage:
-       answer1 = []
-       for place in coupe:
+        answer1 = []
+        for place in coupe:
             if not coupe[place]:
                 answer1.append(place)
             elif coupe[place]  != gender:
                 break
             
-       else:
+        else:
             if len(answer1) < 4:
-                answer += answer1                 
+                answer += answer1  
+    return answer               
 
 carriage = random_carriage()
 print_carriage(carriage)
+
 
 print('Список полностью свободных купе')
 print(empty_coupe_list(carriage))
