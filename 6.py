@@ -1,6 +1,14 @@
 import random
 
 def create_votes(parties, people):
+    """ Создает список голосов
+    Args:
+        parties(int) = партии
+        people(int) = люди
+
+    Returns:
+            Возвращает результат
+    """
     result =[]
     for _ in range(people):
         vote = random.randint(0, parties)
@@ -9,6 +17,11 @@ def create_votes(parties, people):
 
 
 def election_results(parties,votes):
+    """ Список 
+    Args:
+        parties(int) = партии
+        votes(int) = голоса
+    """
     results = {}
     for party in range(parties + 1):
         results[party] = votes.count(party)
