@@ -7,9 +7,9 @@ while True:
         turn.append(number)
         print('ok')
     elif command == 'pop':
-        print(turn.pop())
-    elif command == 'back':
-        print(turn[-1])
+        print(turn.pop(1))
+    elif command == 'front':
+        print(turn[0])
     elif command == 'size':
         print(len(turn))
     elif command == 'clear':
