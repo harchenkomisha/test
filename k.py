@@ -1,19 +1,19 @@
-stack = []
+turn = []
 
 while True:
     command = input().strip()
     if command.startswith('push'):
         number = int(command.split()[1])
-        stack.append(number)
+        turn.append(number)
         print('ok')
     elif command == 'pop':
-        print(stack.pop())
+        print(turn.pop())
     elif command == 'back':
-        print(stack[-1])
+        print(turn[-1])
     elif command == 'size':
-        print(len(stack))
+        print(len(turn))
     elif command == 'clear':
-        stack.clear()
+        turn.clear()
         print('ok')
     elif command == 'exit':
         print('bye')
