@@ -10,5 +10,5 @@ for _  in range(N):
     avg_mark = sum(pupils[last_name]) / MARCS_COUNT
     output.append('%s %.2f' %(last_name,avg_mark))
     
-    print('-' * 20)
-    print('\n'.join(output))
+print('-' * 20)
+print('\n'.join(output))
