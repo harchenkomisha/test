@@ -80,7 +80,7 @@ def create_block():
     posy = SEG_SIZE * (random.randint(1, (HEIGHT-SEG_SIZE)/SEG_SIZE))
 
     # Создаем блок как красный круг
-    BLOCK = c.create_oval(posx, posy, posx+SEG_SIZE, posy+SEG_SIZE, fill='red')
+    BLOCK = c.create_oval(posx, posy, posx+SEG_SIZE, posy+SEG_SIZE, fill='yellow')
 
 def main():
     global IN_GAME
@@ -109,7 +109,7 @@ def main():
             for index in range(len(s.segments)-1):
                 if c.coords(s.segments[index].instance) == head_coords:
                     IN_GAME = False
-                    break
+                    break   
     
     # Если не в игре, то выводим сообщение о проигрыше
     else:
